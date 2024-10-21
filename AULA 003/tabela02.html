@@ -11,49 +11,119 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         table{
-            width: 500px;
+            width: 380px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+        caption{
+            background-color: lightgray;
+            padding: 5px;
+            font-size: 1.3em;
         }
         th, td{
             border: 1px solid black;
             padding: 5px;
         }
         td{
-            text-align: center;
+            text-align: left;
+        }
+        thead tr th{
+            position: sticky;
+            top: 0px;
+            background-color: aquamarine;
+        }
+        tbody tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+        .numero{
+            text-align: right;
         }
         thead , tfoot{
             background-color: aquamarine;
         }
     </style>
+
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
 
     <table>
+        <caption>Estatísticas Populacional</caption>
         <thead>
             <tr>
-                <th>Provincia</th>
-                <th>População</th>
+                <th scope="col">Provincia</th>
+                <th scope="col" style="width: 120px">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Luanda</td>
-                <td>70 589 975</td>
+                <td class="numero">70 589 975</td>
             </tr>
             <tr>
                 <td>Benguela</td>
-                <td>49 978 90</td>
+                <td class="numero">49 978 90</td>
+            </tr>
+            <tr>
+                <td>Huambo</td>
+                <td class="numero">67 970 689</td>
+            </tr>
+            <tr>
+                <td>Bié</td>
+                <td class="numero">19 650 9</td>
+            </tr>
+            <tr>
+                <td>Malanje</td>
+                <td class="numero">20 689 90</td>
+            </tr>
+            <tr>
+                <td>Namibe</td>
+                <td class="numero">47 907 8</td>
+            </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td class="numero">55 089 50</td>
+            </tr>
+            <tr>
+                <td>Zaire</td>
+                <td class="numero">54 69 23</td>
+            </tr>
+            <tr>
+                <td>Cunene</td>
+                <td class="numero">38 790 50</td>
+            </tr>
+            <tr>
+                <td>Bengo</td>
+                <td class="numero">47 908 90</td>
+            </tr>
+            <tr>
+                <td>Uíge</td>
+                <td class="numero">58 890 60</td>
+            </tr>
+            <tr>
+                <td>Cuando Cubango</td>
+                <td class="numero">76 890 9</td>
+            </tr>
+            <tr>
+                <td>Kwanza Norte</td>
+                <td class="numero">510 890</td>
+            </tr>
+            <tr>
+                <td>Kwanza Sul</td>
+                <td class="numero">79 706 3</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total População</th>
-                <td> 000 000 00</td>
+                <th scope="row">Total População</th>
+                <td> <strong>000 000 00</strong>
             </tr>
         </tfoot>
 
     </table>
-
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Corporis cupiditate ipsa nulla? Numquam rerum voluptates eligendi neque unde deleniti quis <br> fugiat perferendis qui provident dolores beatae, culpa exercitationem quasi nesciunt? Lorem <br>ipsum dolor sit amet consectetur, adipisicing elit. Iusto fugit voluptatum eligendi quos dolorem <br> illo vitae debitis recusandae, quae consequuntur, similique est quas, et hic quia adipisci <br> vero explicabo quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore perspiciatis magnam, amet quod fugit eligendi doloremque, cupiditate suscipit animi nam. <br> Quia eos quidem fugiat totam eum dignissimos quam ipsum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate impedit eum saepe totam optio, velit alias cumque <br> dignissimos error distinctio in ex veritatis dicta debitis accusantium! Ad, at quis! Lorem <br> ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorem obcaecati aut odit commodi <br> accusamus blanditiis, recusandae, illo explicabo eum, vitae corrupti animi ab laboriosam? Debitis veritatis nobis officia aut! Lorem ipsum dolor, sit amet consectetur adipisicing <br> elit. Fugiat ipsam quis, sed, excepturi nemo obcaecati dolor iusto minus cupiditate placeat corrupti eveniet aperiam odit ipsa qui doloribus magni quam minima.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Corporis cupiditate ipsa nulla? Numquam rerum voluptates eligendi neque unde deleniti quis fugiat <br> perferendis qui provident dolores beatae, culpa exercitationem quasi nesciunt? Lorem ipsum dolor <br> sit amet consectetur, adipisicing elit. Iusto fugit voluptatum eligendi quos dolorem illo <br> vitae debitis recusandae, quae consequuntur, similique est quas, et hic quia adipisci vero <br> explicabo quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore perspiciatis <br> magnam, amet quod fugit eligendi doloremque, cupiditate suscipit animi nam. Quia eos quidem fugiat totam eum dignissimos quam ipsum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate impedit eum saepe totam optio, velit alias cumque dignissimos error distinctio in ex veritatis dicta debitis accusantium! Ad, at quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorem obcaecati aut odit commodi accusamus blanditiis, recusandae, illo explicabo eum, vitae corrupti animi ab laboriosam? Debitis veritatis nobis officia aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ipsam quis, sed, excepturi nemo obcaecati dolor iusto minus cupiditate placeat corrupti eveniet aperiam odit ipsa qui doloribus magni quam minima.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis cupiditate ipsa nulla? Numquam rerum voluptates eligendi neque unde deleniti quis fugiat perferendis qui provident dolores beatae, culpa exercitationem quasi nesciunt? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto fugit voluptatum eligendi quos dolorem illo vitae debitis recusandae, quae consequuntur, similique est quas, et hic quia adipisci vero explicabo quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore perspiciatis magnam, amet quod fugit eligendi doloremque, cupiditate suscipit animi nam. Quia eos quidem fugiat totam eum dignissimos quam ipsum!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate impedit eum saepe totam optio, velit alias cumque dignissimos error distinctio in ex veritatis dicta debitis accusantium! Ad, at quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorem obcaecati aut odit commodi accusamus blanditiis, recusandae, illo explicabo eum, vitae corrupti animi ab laboriosam? Debitis veritatis nobis officia aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ipsam quis, sed, excepturi nemo obcaecati dolor iusto minus cupiditate placeat corrupti eveniet aperiam odit ipsa qui doloribus magni quam minima.</p>
 </body>
 </html>

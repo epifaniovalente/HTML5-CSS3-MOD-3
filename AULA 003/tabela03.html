@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            width: 300px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Tabelas</h1>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            
+            <td colspan="2" style="background-color: burlywood">D</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="background-color: chartreuse">E</td>
+            <td>F</td>
+            <td>G</td>
+            <td rowspan="2" style="background-color: aqua;">H</td>
+        </tr>
+        <tr>
+            
+            <td>J</td>
+            <td>K</td>
+            
+        </tr>
+        <tr>
+            
+            <td>N</td>
+            <td colspan="2" style="background-color: blue">O</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
